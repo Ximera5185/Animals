@@ -10,6 +10,11 @@ namespace Animals
     {
         static void Main(string [] args)
         {
+            Animals Cat = new Animals();
+
+            Cat.PlayAnimalSound();
+
+            Console.ReadKey();
         }
     }
 }
