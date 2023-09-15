@@ -8,13 +8,12 @@ namespace Animals
 {
     internal class Animals
     {
-        string Name { get; set; }
+        public string Name = "";
+        public string Roar = "";
 
-        string Roar { get; set; }
-
-        public void PlayAnimalSound() 
+        public void PlayAnimalSound(string name,string roar) 
         {
-            Console.WriteLine($"Звук {Name} {Roar}");
+            Console.WriteLine($"Имя {name} Звук {roar}");
         }
     }
 }

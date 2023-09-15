@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace Animals
 {
-    internal class Cat: Animals
+    internal class Cat : Animals
     {
-        string Name = "Cat";
-
-        string Roar = "Мяу";
+        public string Name = "";
+        public string Roar = "";
+        public Cat(string name, string roar)
+        {
+            Name = name;
+            Roar = roar;
+        }
     }
 }
