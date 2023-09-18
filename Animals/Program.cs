@@ -14,6 +14,7 @@ namespace Animals
             Dog dog = new Dog("Собака","Гав-Гав");
 
             cat.PlayAnimalSound(cat.Name, cat.Roar);
+
             dog.PlayAnimalSound(dog.Name, dog.Roar);
 
             Console.ReadKey();
