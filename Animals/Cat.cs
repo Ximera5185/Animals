@@ -8,12 +8,8 @@ namespace Animals
 {
     internal class Cat : Animals
     {
-        public string Name = "";
-        public string Roar = "";
-        public Cat(string name, string roar)
+        public Cat(string name, string roar) : base(name, roar)
         {
-            Name = name;
-            Roar = roar;
         }
     }
 }
