@@ -11,8 +11,10 @@ namespace Animals
         static void Main(string [] args)
         {
             Cat cat = new Cat("Кошка", "Мяяяяу");
+            Dog dog = new Dog("Собака","Гав-Гав");
 
             cat.PlayAnimalSound(cat.Name, cat.Roar);
+            dog.PlayAnimalSound(dog.Name, dog.Roar);
 
             Console.ReadKey();
         }
