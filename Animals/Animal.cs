@@ -13,6 +13,7 @@ namespace Animals
             Name = name;
             Roar = roar;
         }
+
         public string Name { private set; get; }
         public string Roar { private set; get; }
 

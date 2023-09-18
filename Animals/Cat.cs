@@ -8,27 +8,26 @@ namespace Animals
 {
     internal class Cat : Animal
     {
-        public Cat(string name, string roar, bool IsCatsPurr) : base(name, roar)
+        public Cat(string name, string roar, bool IsCatPurr) : base(name, roar)
         {
+            _IsCatPurr = IsCatPurr;
         }
+        private bool _IsCatPurr { get; set; }
 
-        public bool IsCatsPurr { get; set; }
-
-      public  string Purr = "";
-
-        
+        private  string _Purr = "";
+ 
         public override void PlaySound()
         {
-            if (IsCatsPurr == true)
+            if (_IsCatPurr)
             {
-                Purr = "Мурчит";
+                _Purr = "Мурчит";
             }
             else
             {
-                Purr = "Не мурчит";
+                _Purr = "Не мурчит";
             }
 
-            Console.WriteLine($"Имя {Name} Звук {Roar} {Purr}");
+            Console.WriteLine($"Имя {Name} Звук {Roar} {_Purr}");
         }
     }
 }
