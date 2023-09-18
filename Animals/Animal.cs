@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Animals
 {
-    internal class Animals
+    internal class Animal
     {
-        public Animals(string name, string roar)
+        public Animal(string name, string roar)
         {
             Name = name;
             Roar = roar;
@@ -16,9 +16,9 @@ namespace Animals
         public string Name { private set; get; }
         public string Roar { private set; get; }
 
-        public void PlayAnimalSound(string name, string roar)
+      virtual public void PlaySound()
         {
-            Console.WriteLine($"Имя {name} Звук {roar}");
+            Console.WriteLine($"Имя {Name} Звук {Roar}");
         }
     }
 }

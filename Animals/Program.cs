@@ -10,13 +10,18 @@ namespace Animals
     {
         static void Main(string [] args)
         {
-            Cat cat = new Cat("Кошка", "Мяяяяу");
-            Dog dog = new Dog("Собака","Гав-Гав");
+            Animal [] Zoo = new Animal [3]
+            {
+              new Cat("Кошка", "Мяяяяу",true),
+              new Dog("Собака", "Гав-Гав"),
+              new Frog("Лягушка", "Ква - Ква")
+            };
 
-            cat.PlayAnimalSound(cat.Name, cat.Roar);
-
-            dog.PlayAnimalSound(dog.Name, dog.Roar);
-
+            foreach (Animal animal in Zoo)
+            {
+                animal.PlaySound();
+            }
+            
             Console.ReadKey();
         }
     }

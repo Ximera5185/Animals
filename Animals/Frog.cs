@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Animals
 {
-    internal class Dog : Animal
+    internal class Frog: Animal
     {
-        public Dog(string name, string roar) : base(name, roar)
+        public Frog(string name, string roar) :base (name,roar) 
         {
+            
         }
     }
 }
