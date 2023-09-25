@@ -10,13 +10,13 @@ namespace Animals
     {
         public Dog(string name, string roar, int numberOfBonesBuried) : base(name, roar)
         {
-            _NumberOfBonesBuried = numberOfBonesBuried;
+            NumberOfBonesBuried = numberOfBonesBuried;
         }
 
-        private int _NumberOfBonesBuried;
+        private readonly int NumberOfBonesBuried;
         public override void PlaySound()
         {
-            Console.WriteLine($"Имя {Name} Звук {Roar}количество закопанных косточек {_NumberOfBonesBuried}");
+            Console.WriteLine($"Имя {Name} Звук {Roar}количество закопанных косточек {NumberOfBonesBuried}");
         }
     }
 }
