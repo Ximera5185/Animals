@@ -13,10 +13,13 @@ namespace Animals
             NumberOfBonesBuried = numberOfBonesBuried;
         }
 
-        private readonly int NumberOfBonesBuried;
-        public override void PlaySound()
+        private  int NumberOfBonesBuried;
+
+        public void PlaySound()
         {
-            Console.WriteLine($"Имя {Name} Звук {Roar}количество закопанных косточек {NumberOfBonesBuried}");
+            base.PlaySound(Name, Roar);
+
+            Console.WriteLine($" {NumberOfBonesBuried} ");
         }
     }
 }

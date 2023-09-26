@@ -16,7 +16,7 @@ namespace Animals
 
         private  string _Purr = "";
  
-        public override void PlaySound()
+        public  void PlaySound()
         {
             if (_IsCatPurr)
             {
@@ -27,7 +27,7 @@ namespace Animals
                 _Purr = "Не мурчит";
             }
 
-            Console.WriteLine($"Имя {Name} Звук {Roar} {_Purr}");
+            base.PlaySound(Name,Roar);
         }
     }
 }

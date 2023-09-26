@@ -17,9 +17,9 @@ namespace Animals
         public string Name { private set; get; }
         public string Roar { private set; get; }
 
-      virtual public void PlaySound()
+      virtual public void PlaySound(string name,string roar)
         {
-            Console.WriteLine($"Имя {Name} Звук {Roar}");
+            Console.WriteLine($"Имя {name} Звук {roar}");
         }
     }
 }

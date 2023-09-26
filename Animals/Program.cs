@@ -19,7 +19,7 @@ namespace Animals
 
             foreach (Animal animal in Zoo)
             {
-                animal.PlaySound();
+                animal.PlaySound(animal.Name,animal.Roar);
             }
             
             Console.ReadKey();
