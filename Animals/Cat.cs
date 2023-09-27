@@ -14,20 +14,19 @@ namespace Animals
         }
         private bool _IsCatPurr { get; set; }
 
-        private  string _Purr = "";
- 
-        public  void PlaySound()
+        override public void PlaySound(string name, string roar)
         {
+
             if (_IsCatPurr)
             {
-                _Purr = "Мурчит";
+                Console.WriteLine("Мурчит");
             }
             else
             {
-                _Purr = "Не мурчит";
+                Console.WriteLine("Не мурчит");
             }
 
-            base.PlaySound(Name,Roar);
+            base.PlaySound(name, roar);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Animals
         {
             Animal [] Zoo = new Animal [3]
             {
-              new Cat("Кошка", "Мяяяяу",false),
+              new Cat("Кошка", "Мяяяяу",true),
               new Dog("Собака", "Гав-Гав",15),
               new Frog("Лягушка", "Ква - Ква")
             };

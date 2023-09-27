@@ -15,11 +15,11 @@ namespace Animals
 
         private  int NumberOfBonesBuried;
 
-        public void PlaySound()
+        public override void PlaySound(string name, string roar)
         {
-            base.PlaySound(Name, Roar);
+            base.PlaySound(name, roar);
 
-            Console.WriteLine($" {NumberOfBonesBuried} ");
+            Console.WriteLine($"Колличество косточек {NumberOfBonesBuried} ");
         }
     }
 }

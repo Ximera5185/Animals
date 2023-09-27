@@ -13,9 +13,5 @@ namespace Animals
             
         }
 
-        public void PlaySound()
-        {
-            base.PlaySound(Name, Roar);
-        }
     }
 }
