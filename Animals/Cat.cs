@@ -6,9 +6,9 @@ namespace Animals
     {
         private bool _IsPurr { get; set; }
 
-        public Cat(string name, string roar, bool IsCatPurr) : base(name, roar)
+        public Cat(string name, string roar, bool IsPurr) : base(name, roar)
         {
-            this._IsPurr = IsCatPurr;
+            this._IsPurr = IsPurr;
         }
 
         override public void PlaySound(string name, string roar)
