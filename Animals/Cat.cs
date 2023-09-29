@@ -4,16 +4,16 @@ namespace Animals
 {
     internal class Cat : Animal
     {
-        private bool _IsPurr { get; set; }
+        private bool _isPurr { get; set; }
 
-        public Cat(string name, string roar, bool IsPurr) : base(name, roar)
+        public Cat(string name, string roar, bool isPurr) : base(name, roar)
         {
-            this._IsPurr = IsPurr;
+            this._isPurr = isPurr;
         }
 
         override public void PlaySound(string name, string roar)
         {
-            if (_IsPurr)
+            if (_isPurr)
             {
                 Console.WriteLine("Мурчит");
             }
