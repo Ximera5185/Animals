@@ -4,7 +4,7 @@ namespace Animals
 {
     internal class Cat : Animal
     {
-        private bool _isPurr { get; set; }
+        private bool _isPurr;
 
         public Cat(string name, string roar, bool isPurr) : base(name, roar)
         {
